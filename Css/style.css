@@ -195,6 +195,34 @@ h1 {
     padding: 120px 0;
 }
 
+.our_categories>p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    /* or 121% */
+    text-align: center;
+    color: #282F3A;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.title h2 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    /* identical to box height */
+    text-align: center;
+    color: #282F3A;
+}
+
+.title .title_red_h2 {
+    color: #E0286A;
+}
+
 .category {
     background: #FFFFFF;
     box-shadow: 7px 9px 14px rgba(0, 0, 0, 0.03);
@@ -207,14 +235,154 @@ h1 {
     align-items: center;
 }
 
-.our_categories .row{
+.our_categories .row {
     gap: 30px 0;
     justify-content: space-between;
+    margin-top: 33px;
 }
 
-@media (max-width:1200px){
-    .our_categories .row{
+@media (max-width:1200px) {
+    .our_categories .row {
         gap: 30px;
         justify-content: center;
     }
+}
+
+.visited_places {
+    background-color: #FFFFFF;
+    padding: 120px 0;
+}
+
+.visited_places_list {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    margin: 50px 0 0 0;
+}
+
+.visited_places_list li {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    background: #FFFFFF;
+    box-shadow: 7px 7px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+
+.img_visited_places button {
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 39px;
+    border: none;
+    padding: 0;
+    margin: 15px 0 0 15px;
+}
+
+.img_visited_places button a {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #E0286A;
+    text-decoration: none;
+    padding: 7px 15px;
+    border-radius: 39px;
+}
+
+.ivp1 {
+    background-image: url(../Img/burger.svg);
+    height: 208px;
+    border-radius: 12px;
+}
+
+.ivp2 {
+    background-image: url(../Img/shop\ Shoes\ for\ you.svg);
+    height: 208px;
+    border-radius: 12px;
+}
+
+.ivp3 {
+    background-image: url(../Img/hotel\ sparta.svg);
+    height: 208px;
+    border-radius: 12px;
+}
+
+.ivp4 {
+    background-image: url(../Img/hotel\ hi-tech.svg);
+    height: 208px;
+    border-radius: 12px;
+}
+
+.content_visited_list {
+    margin: 26px 0 0 29px;
+    max-width: 237px;
+}
+
+.content_visited_list h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    color: #282F3A;
+    margin-bottom: 12px;
+}
+
+.content_visited_list p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+    color: #73757A;
+    margin: 0 0 0 0;
+}
+
+.rating {
+    display: flex;
+    gap: 7px;
+}
+
+.number_rating {
+    background-color: #50C269;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 18px;
+}
+
+.number_rating p {
+    margin: 0 0 0 0;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+.locate_list {
+    display: flex;
+    gap: 9px;
+    margin: 11px 0 20px 0;
+}
+
+.locate_list p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #282F3A;
+    margin: 0 0 0 0;
+}
+
+.like_list {
+    display: flex;
+    justify-content: space-between;
+    margin: 18px 0 27px 0;
+}
+
+.like_list>a {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #46A017;
 }
