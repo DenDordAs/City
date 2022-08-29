@@ -254,7 +254,7 @@ h1 {
 }
 
 .visited_places .container {
-    padding: 0 0 0 0;
+    padding: 0;
     max-width: 1170px;
     width: 100%;
 }
@@ -264,7 +264,7 @@ h1 {
     gap: 30px;
     list-style-type: none;
     margin: 50px 0 60px 0;
-    padding: 0 0 0 0;
+    padding: 0;
 }
 
 .visited_places_list li {
@@ -340,7 +340,7 @@ h1 {
     line-height: 21px;
     /* or 171% */
     color: #73757A;
-    margin: 0 0 0 0;
+    margin: 0;
 }
 
 .rating {
@@ -359,7 +359,7 @@ h1 {
 }
 
 .number_rating p {
-    margin: 0 0 0 0;
+    margin: 0;
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
@@ -377,13 +377,20 @@ h1 {
     font-size: 14px;
     line-height: 17px;
     color: #282F3A;
-    margin: 0 0 0 0;
+    margin: 0;
 }
 
 .like_list {
+    position: relative;
     display: flex;
     justify-content: space-between;
     margin: 18px 0 27px 0;
+}
+
+.like_img{
+    position: absolute;
+    bottom: -5px;
+    right: 10px;
 }
 
 .like_list>a {
@@ -422,7 +429,7 @@ h1 {
 }
 
 .best_businesses .container {
-    padding: 0 0 0 0;
+    padding: 0;
     max-width: 1170px;
     width: 100%;
 }
@@ -430,10 +437,10 @@ h1 {
 .best_businesses_lists {
     display: flex;
     list-style-type: none;
-    gap: 25px;
+    gap: 30px;
     height: 323px;
     margin: 61px 0 29px 0;
-    padding: 0 0 0 0;
+    padding: 0;
 }
 
 .best_businesses_lists li {
@@ -447,13 +454,20 @@ h1 {
     justify-content: end;
 }
 
-.best_businesses_lists li>img {
+.best_businesses_lists li .image_loc {
     background-color: #D3D3D3;
     border: 7px solid #FFFFFF;
     box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.09);
     border-radius: 182px;
+    display: flex;
     width: 170px;
     height: 170px;
+}
+
+.best_businesses_lists li .image_loc>img{
+    box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.09);
+    border-radius: 182px;
+    width: 105%;
 }
 
 .best_businesses_lists h3 {
@@ -481,7 +495,7 @@ h1 {
     font-size: 12px;
     line-height: 14px;
     color: #E0286A;
-    margin: 0 0 0 0;
+    margin: 0;
 }
 
 .font_best_businesses {
@@ -489,7 +503,8 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 1420px;
+    max-width: 1420px;
+    width: 100%;
     height: 337px;
     margin: 0 auto;
     display: flex;
@@ -500,11 +515,12 @@ h1 {
     background-color: #E0286A;
     border-radius: 646px;
     border: none;
+    height: max-content;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 0 0 0;
-    margin: 33px 0 0 0;
+    padding: 0;
+    margin-top: 33px;
 }
 
 .font_best_businesses button a {
@@ -517,4 +533,23 @@ h1 {
     padding: 16px 57px;
     border-radius: 646px;
     text-decoration: none;
+}
+
+.claim{
+    background-image: url(../Img/claim\ bg.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 20%;
+    background-size: 20%;
+    height: 827px;
+}
+
+/* Section Our */
+/* Media Our */
+/* Media Our */
+/* Section Our */
+
+@media screen and (max-width:769px) {
+    .our_categories{
+        padding: 10%;
+    }
 }
