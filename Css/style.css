@@ -258,7 +258,8 @@ h1 {
     width: 100%;
 }
 
-.visited_places_list {
+.visited_places_list,
+.recent_activity_lists {
     display: flex;
     gap: 30px;
     list-style-type: none;
@@ -266,7 +267,8 @@ h1 {
     padding: 0;
 }
 
-.visited_places_list li {
+.visited_places_list li,
+.recent_activity_lists li {
     display: flex;
     flex-direction: column;
     width: 270px;
@@ -275,7 +277,8 @@ h1 {
     border-radius: 12px;
 }
 
-.img_visited_places button {
+.img_visited_places button,
+.recent_activity_img button {
     display: flex;
     background-color: #FFFFFF;
     border-radius: 39px;
@@ -284,7 +287,8 @@ h1 {
     margin: 15px 0 0 15px;
 }
 
-.img_visited_places button a {
+.img_visited_places button a,
+.recent_activity_img button a {
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
@@ -319,12 +323,14 @@ h1 {
     border-radius: 12px;
 }
 
-.content_visited_list {
+.content_visited_list,
+.recent_activity_lists_text {
     margin: 26px 0 0 29px;
     max-width: 237px;
 }
 
-.content_visited_list h3 {
+.content_visited_list h3,
+.recent_activity_lists_text h3 {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
@@ -333,7 +339,8 @@ h1 {
     margin-bottom: 12px;
 }
 
-.content_visited_list p {
+.content_visited_list p,
+.recent_activity_lists_text p {
     font-weight: 300;
     font-size: 14px;
     line-height: 21px;
@@ -342,12 +349,14 @@ h1 {
     margin: 0;
 }
 
-.rating {
+.rating,
+.rating_recent_activity {
     display: flex;
     gap: 7px;
 }
 
-.number_rating {
+.number_rating,
+.number_rating_recent_activity {
     background-color: #50C269;
     border-radius: 3px;
     display: flex;
@@ -357,7 +366,8 @@ h1 {
     height: 18px;
 }
 
-.number_rating p {
+.number_rating p,
+.number_rating_recent_activity p {
     margin: 0;
     font-weight: 500;
     font-size: 12px;
@@ -365,13 +375,15 @@ h1 {
     color: #FFFFFF;
 }
 
-.locate_list {
+.locate_list,
+.recent_activity_location {
     display: flex;
     gap: 9px;
     margin: 11px 0 20px 0;
 }
 
-.locate_list p {
+.locate_list p,
+.recent_activity_location p {
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
@@ -379,7 +391,8 @@ h1 {
     margin: 0;
 }
 
-.like_list {
+.like_list,
+.creadet_peapls {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -678,6 +691,239 @@ h1 {
     padding: 16px 36px;
     border-radius: 646px;
 }
+
+.recent_activity {
+    padding: 113px 0 120px 0;
+}
+
+.recent_activity_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recent_activity .container .recent_activity_content>p {
+    max-width: 569px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 25px;
+    /* or 179% */
+    text-align: center;
+    color: #282F3A;
+    margin-bottom: 2px;
+}
+
+.rai1 {
+    background-image: url(../img/burger.jpg);
+    height: 253px;
+    border-radius: 12px;
+}
+
+.rai2 {
+    background-image: url(../img/karaoke.svg);
+    height: 253px;
+    border-radius: 12px;
+}
+
+.rai3 {
+    background-image: url(../img/delfin.svg);
+    height: 253px;
+    border-radius: 12px;
+}
+
+.creadet_peapls_content {
+    display: flex;
+    gap: 13px;
+}
+
+.creadet_peapls_content_text h3 {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #282F3A;
+    margin: 3px 0 3px 0;
+}
+
+.creadet_peapls_content_text p {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: #282F3A;
+}
+
+.recent_activity_lists li {
+    width: 370px;
+}
+
+.recent_activity_lists_text {
+    max-width: 312px;
+}
+
+.site_stats {
+    background-color: #FAFAFA;
+    padding: 115px 0 82px 0;
+}
+
+.site_stats .container {
+    padding: 0;
+}
+
+.site_stats .site_stats_content>p {
+    max-width: 536px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+    text-align: center;
+    color: #282F3A;
+}
+
+.site_stats_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site_stats_users {
+    display: flex;
+    gap: 48px;
+}
+
+.site_stats_users img {
+    max-width: 645px;
+    width: 100%;
+    max-height: 568px;
+    height: 100%;
+}
+
+.site_users_lists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 51px 67px;
+    padding: 0;
+    margin-top: 96px;
+}
+
+.site_users_lists li {
+    background-color: #FBFBFB;
+    border: #FFFFFF 14px solid;
+    box-shadow: 7px 7px 44px rgba(0, 0, 0, 0.03);
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 194px;
+    height: 194px;
+}
+
+.site_users_lists li h3 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    /* identical to box height */
+    text-align: center;
+    color: #E0286A;
+}
+
+.site_users_lists li p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #282F3A;
+    max-width: 101px;
+    margin: 0;
+}
+
+.testimonias {
+    padding: 115px 0 120px;
+}
+
+.testimonias .container {
+    max-width: 1770px;
+    padding: 0;
+}
+
+.testimonias_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonias .testimonias_content>p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+    text-align: center;
+    color: #282F3A;
+    max-width: 528px;
+}
+
+.peaple_workers {
+    list-style-type: none;
+    gap: 30px;
+    padding: 0;
+    display: flex;
+    margin: 54px 0 60px 0;
+}
+
+.peaple_workers li {
+    max-width: 570px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 39px rgba(0, 0, 0, 0.03);
+    border-radius: 12px;
+}
+
+.peaple_workers_face {
+    width: 70px;
+    height: 70px;
+    margin: 54px 0 18px 0;
+}
+
+.peaple_workers li h3 {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    /* identical to box height */
+    text-align: center;
+    margin: 0;
+}
+
+.peaple_workers li p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+    text-align: center;
+    color: #73757A;
+    max-width: 445px;
+    margin: 29px 0 22px 0;
+}
+
+.peaple_workers_stars{
+    margin: 20px 0 10px 0;
+}
+
+.peaple_workers li h4 {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    /* identical to box height, or 200% */
+    text-align: center;
+    color: #282F3A;
+    margin-bottom: 42px;
+}
+
+
+
+
+
+
 
 
 
